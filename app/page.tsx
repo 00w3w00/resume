@@ -11,7 +11,7 @@ export default function Home() {
 		<main className={styles.main}>
 			<IntroSection
 				image={image}
-				name={"최종현"}
+				name={"최성현"}
 				careerStartDate="2022-01-01"
 				inputs={[
 					{ email: "cjh980120@gmail.com" },
