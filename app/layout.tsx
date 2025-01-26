@@ -8,14 +8,14 @@ import { GoogleAnalytics } from "@next/third-parties/google"
 const NSK = Noto_Sans_KR({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-	title: "최종현 | 프론트엔드 개발자 이력서",
-	description: "안녕하세요, 프론트엔드 개발자 최종현입니다",
+	title: "최성현 | 프론트엔드 개발자 이력서",
+	description: "안녕하세요, 프론트엔드 개발자 최성현입니다",
 	metadataBase: new URL("https://cjh0120.github.io/resume"),
 	keywords: [
 		"프론트엔드 개발자 이력서",
 		"프론트엔드",
 		"개발자",
-		"최종현 이력서",
+		"최성현 이력서",
 	],
 	robots: {
 		index: true,
