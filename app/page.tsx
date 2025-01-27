@@ -12,7 +12,7 @@ export default function Home() {
 			<IntroSection
 				image={image}
 				name={"최성현"}
-				careerStartDate="2022-01-01"
+				careerStartDate="2022-06-01"
 				inputs={[
 					{ email: "cjh980120@gmail.com" },
 					{ github: "https://github.com/suxghyxn" },
@@ -20,8 +20,7 @@ export default function Home() {
 			/>
 			<Introduce
 				introducing={[
-					"React, Next.js, TypeScript, CSS-in-JS, SCSS, RESTful API 등을 활용하여 사용자 경험을 향상시키기 위해 노력하며, 확장성과 유지 보수를 고려하여 항상 효율적인 코드를 고민하고 있습니다. 기획자 및 디자이너와는 Figma를 활용해 디자인과 기획의 명확한 커뮤니케이션을 진행하며, 백엔드 팀과는 Swagger를 사용해 API 문서를 공유하여 원활한 협업을 하고 있습니다",
-					"혼자 작업하면서 가끔 제 방향이 맞는지에 대해 의문을 느끼기도 합니다. 하지만 코딩에는 정답이 없다고 생각하며, 비록 덜 효율적일지라도 새로운 접근 방식을 이해하려고 노력합니다. 이후 리서치나 학습을 통해 더 나은 방법을 발견하면 이를 빠르게 채택하려는 자세를 유지하고 있습니다.",
+					"효율적이고 확장 가능한 코드를 작성하는 데 집중하며, 개발 과정에서 때때로 제 선택이 올바른지 고민할 때가 있습니다. 그러나 저는 코딩에 절대적인 정답은 없다고 믿습니다. 비록 덜 효율적일 수 있는 방법이라도 새로운 접근 방식을 시도하고, 그 과정에서 얻은 통찰을 바탕으로 리서치와 학습을 통해 더 나은 해결책을 찾아내어, 이를 빠르게 적용하는 유연한 자세를 유지하고 있습니다.",
 				]}
 			/>
 			<Skill
@@ -44,7 +43,7 @@ export default function Home() {
 						skillName: "database",
 						skillValue: ["MySQL", "MariaDB", "FireBase"],
 					},
-					{ skillName: "tool", skillValue: ["Figma", "Git"] },
+					{ skillName: "tool", skillValue: ["Figma", "Git", "JIRA"] },
 				]}
 			/>
 			<Experience
@@ -91,19 +90,33 @@ export default function Home() {
 			<Project
 				data={[
 					{
+						title: "Server Driven UI",
+						startDate: "2024.06.01",
+						endDate: "2024.05.24",
+						stackList: ["Next.JS", "SWR"],
+						subTitle: "엑스포럼",
+						list: [
+							"Turbo Repo를 활용해 공통 컴포넌트를 효율적으로 관리",
+							"기획 단계에서 구상한 내용을 바탕으로 SDUI 디자인 시스템 설계 및 구현",
+							"데이터베이스 설계를 통해 SDUI 컴포넌트를 체계적으로 제작",
+						],
+					},
+					{
 						title: "전시회 웹사이트",
 						startDate: "2024.03.11",
 						endDate: "2024.05.24",
 						stackList: ["Next.JS", "SWR"],
 						subTitle: "엑스포럼",
 						list: [
-							"공통 컴포넌트 개발",
-							"Git Submodule을 활용하여 전시회 웹사이트와 어드민 대시보드 프로젝트에서 공통 컴포넌트를 효율적으로 관리. 이로 인해 두 프로젝트 간의 코드 일관성을 유지하고 유지보수 작업을 간소화함.",
+							"공통 컴포넌트 개발 및 관리",
 							"SSR과 ISR을 통한 데이터 캐싱 관리",
-							"어드민 대시보드: 전시회 관리자가 전시회 내용을 쉽게 업데이트하고 관리할 수 있는 대시보드 개발.",
-							"데이터 관리: 참가자 등록 정보, 전시 일정, 스폰서 정보 등을 효율적으로 관리할 수 있는 기능을 구현하여 관리자의 업무 효율성을 향상.",
-							"사용자 친화적인 페이지 구성과 반응형 디자인 구현으로 다양한 장치에서 최적화된 사용자 경험 제공.",
-							"Backend팀 및 디자인/기획 팀과의 원활한 협업을 통해 프로젝트의 목표를 성공적으로 달성.",
+							"SEO 최적화",
+							"웹사이트 최적화를 통해 Lighthouse 퍼포먼스 점수를 40점에서 99점으로 약 2.47배 증가시킴",
+							"Git Submodule을 활용해 전시회 웹사이트와 어드민 대시보드 간 공통 컴포넌트를 효과적으로 관리. 이를 통해 두 프로젝트 간 코드 일관성을 유지하고 유지보수를 간소화함",
+							"포트원을 연동하여 외국인 사용자를 위한 결제 프로세스를 구축 및 운영",
+							"어드민 대시보드 개발: 전시회 관리자가 전시 내용을 쉽게 업데이트하고 관리할 수 있도록 대시보드를 설계 및 구현.",
+							"데이터 관리: 참가자 등록 정보, 티켓 환불(취소) 관리할 수 있는 기능을 통해 관리 효율성 증대",
+							"사용자 친화적인 인터페이스 설계 및 반응형 디자인 구현으로 다양한 디바이스에서 최적화된 사용자 경험 제공.",
 						],
 					},
 					{
@@ -118,7 +131,7 @@ export default function Home() {
 						],
 					},
 					{
-						title: "TOPICK",
+						title: "TOPIC(B2C 사이트)",
 						startDate: "2023.11.20",
 						endDate: "2024.01.12",
 						stackList: ["Next.JS", "HBS"],
@@ -142,7 +155,7 @@ export default function Home() {
 						list: [
 							"어드민에서 가맹점 생성 기능 구현.",
 							"어드민 웹 페이지에서 가맹점 정보를 입력할 수 있는 폼을 개발.",
-							"SSR을 활용한 키오스크 결과 QR 코드 생성",
+							"키오스크 결과내용 QR 코드 생성",
 							"Firebase를 활용한 통합 관리",
 							"랜딩 페이지 제작",
 							"Electron.js를 사용하여 타로 키오스크의 데스크톱 애플리케이션 개발.",
@@ -157,8 +170,7 @@ export default function Home() {
 						stackList: ["ReactNative", "Node.JS", "TypeScript", "Nest.JS"],
 						subTitle: "바나나코퍼레이션",
 						list: [
-							"셀러를 위한 대시보드를 제작하였습니다.",
-							"다양한 환경에서 재사용 가능한 공유 컴포넌트를 개발하였습니다.",
+							"다양한 환경에서 재사용 가능한 공유 컴포넌트를 개발",
 							"어드민 설정 기능을 구현하였습니다.",
 						],
 					},

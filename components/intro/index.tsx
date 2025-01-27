@@ -35,7 +35,7 @@ const IntroSection = ({
 
 	return (
 		<section className={styles.intro_wrap}>
-			<div
+			{/* <div
 				className={styles.intro_image}
 				style={{
 					aspectRatio: `${image.width} / ${image.height}`,
@@ -54,10 +54,14 @@ const IntroSection = ({
 					draggable={false}
 					sizes="(max-width: 300px) 300px, 100vw"
 				/>
-			</div>
+			</div> */}
 
 			<div className={styles.intro_info_wrap}>
-				<h3 className={styles.intro_name}>{name}</h3>
+				<h3 className={styles.intro_name}>프론트엔드 개발자 {name}</h3>
+				<h3 className={styles.intro_desc}>
+					{`효율적이고 확장 가능한 코드를 작성하며, 항상 새로운 접근 방식을 시도하고
+					빠르게 적용하려는 포기하지 않고 책임감 있게 일하는 개발자입니다.`}
+				</h3>
 
 				{inputs.map((input, index) => {
 					const [key, value] = Object.entries(input)[0]
