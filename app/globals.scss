@@ -28,7 +28,9 @@ a {
 		color-scheme: dark;
 	}
 }
-
+:root {
+	--primary-color: #3178c6;
+}
 .footer {
 	width: 100%;
 	padding: 20px;
@@ -44,7 +46,7 @@ a {
 	}
 	.footer-text-link {
 		text-decoration: underline;
-		color: #ff6f61;
+		color: var(--primary-color);
 	}
 	.download {
 		cursor: pointer;

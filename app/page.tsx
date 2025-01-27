@@ -15,7 +15,7 @@ export default function Home() {
 				careerStartDate="2022-01-01"
 				inputs={[
 					{ email: "cjh980120@gmail.com" },
-					{ github: "https://github.com/CJH0120" },
+					{ github: "https://github.com/suxghyxn" },
 				]}
 			/>
 			<Introduce

@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react"
 import styles from "./dateCard.module.scss"
 import { periodDate } from "@/utils/convertDate"
+
 export interface DateCardProps {
 	startDate: string
 	endDate?: string
@@ -29,6 +30,13 @@ const DateCard = ({
 			newDate.getFullYear() + "." + ("0" + (newDate.getMonth() + 1)).slice(-2)
 		)
 	}
+
+	// periodDate에 1개월 추가
+	const adjustedPeriodDate = (start: string, end: string) => {
+		const originalPeriod = periodDate(start, end)
+		return originalPeriod + 1 // 한 달 추가
+	}
+
 	return (
 		<div className={styles["date-card"]}>
 			<div className={styles["date-card-date"]}>
@@ -41,7 +49,10 @@ const DateCard = ({
 					<div className={styles["date-period-wrap"]}>
 						{isPeriod && (
 							<div className={styles["date-period"]}>
-								{periodDate(startDate, endDate ?? new Date().toISOString())}{" "}
+								{adjustedPeriodDate(
+									startDate,
+									endDate ?? new Date().toISOString()
+								)}{" "}
 								개월
 							</div>
 						)}

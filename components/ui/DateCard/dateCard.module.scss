@@ -33,7 +33,7 @@
 				.date-period {
 					padding: 5px;
 					border-radius: 4px;
-					background: #ff6f61;
+					background: var(--primary-color);
 					color: #fff;
 					font-size: 0.8rem;
 				}
@@ -80,7 +80,7 @@
 			.date-card-stack {
 				padding: 5px;
 				border-radius: 4px;
-				background: #ff6f61;
+				background: var(--primary-color);
 				color: #fff;
 				font-size: 0.75rem;
 			}
