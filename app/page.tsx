@@ -92,7 +92,7 @@ export default function Home() {
 					{
 						title: "Server Driven UI",
 						startDate: "2024.06.01",
-						endDate: "2024.01.30",
+						endDate: "2025.01.30",
 						stackList: ["Next.JS", "React query"],
 						subTitle: "엑스포럼",
 						list: [
