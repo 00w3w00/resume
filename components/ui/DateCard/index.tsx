@@ -45,6 +45,11 @@ const DateCard = ({
 						<span>{getYYYYMM(startDate)}</span>
 						{(!!endDate || isCurrent) && <span>~</span>}
 						{endDate && <span>{getYYYYMM(endDate!)}</span>}
+						{isCurrent && (
+							<div className={`${styles["date-period"]}  ${styles["working"]}`}>
+								재직중
+							</div>
+						)}
 					</div>
 					<div className={styles["date-period-wrap"]}>
 						{isPeriod && (
@@ -52,11 +57,10 @@ const DateCard = ({
 								{adjustedPeriodDate(
 									startDate,
 									endDate ?? new Date().toISOString()
-								)}{" "}
+								)}
 								개월
 							</div>
 						)}
-						{isCurrent && <div className={styles["date-period"]}>재직중</div>}
 					</div>
 				</div>
 			</div>
