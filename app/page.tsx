@@ -93,7 +93,7 @@ export default function Home() {
 						title: "Server Driven UI",
 						startDate: "2024.06.01",
 						endDate: "2024.01.30",
-						stackList: ["Next.JS", "SWR"],
+						stackList: ["Next.JS", "React query"],
 						subTitle: "엑스포럼",
 						list: [
 							"Turbo Repo를 활용해 공통 컴포넌트를 효율적으로 관리",
